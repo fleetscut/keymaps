@@ -20,6 +20,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL
 
 #define MASTER_LEFT
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 2000
+
+// For Home Row Mods
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_TERM 225
+
 //#define MASTER_RIGHT
 
 //#define EE_HANDS
