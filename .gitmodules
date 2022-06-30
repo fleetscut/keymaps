@@ -1,4 +1,8 @@
 [submodule "qmk_firmware"]
 	path = qmk_firmware
 	url = https://github.com/qmk/qmk_firmware.git
-    ignore = dirty
+    ignore = all
+[submodule "bastardkb-qmk"]
+	path = bastardkb-qmk
+	url = https://github.com/Bastardkb/bastardkb-qmk
+    ignore = all
