@@ -22,7 +22,7 @@ Flash:
 
 ## Skeletyl
 
-Use bastardkb-qmk.
+Use bastardkb-qmk, branch bkb-master.
 
 Compile:
 `qmk compile -j0 -c -kb bastardkb/skeletyl/v2/elitec -km fleetscut`
