@@ -22,7 +22,9 @@
 #define _NUM 2
 #define _SYM 3
 #define _NAV 4
-#define _PUNC 5
+#define _SWAY1 5
+#define _SWAY2 6
+#define _SWAY3 7
 
 // Home Row Mods
 #define SHFT_T LSFT_T(KC_T)
@@ -39,11 +41,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_DHM] = LAYOUT_split_3x5_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                         KC_J,    KC_L,    KC_U,    KC_Y, KC_QUOT,
+      KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                         KC_J,    KC_L,    LT(_SWAY1,KC_U),    LT(_SWAY2,KC_Y), LT(_SWAY3,KC_SCLN),
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
      GUI_A,   ALT_R,   CTL_S,  SHFT_T,    KC_G,                         KC_M,   SFT_N,   CTL_E,   ALT_I,   GUI_O,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,                         KC_K,    LT(_PUNC,KC_H), KC_COMM,  KC_DOT, KC_SLSH, 
+      KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,                         KC_K,    KC_H, KC_COMM,  KC_DOT, KC_SLSH, 
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                  KC_ESC, LT(_NAV,KC_SPC)  ,  KC_TAB,     LT(_SYM,KC_ENT), LT(_NUM,KC_BSPC) , LT(_FN,KC_DEL)
                                       //`--------------------------'  `--------------------------'
@@ -97,14 +99,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                          XXXXXXX,  XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX
                                       //`--------------------------'  `--------------------------'
   ),
-
-  [_PUNC] = LAYOUT_split_3x5_3(
+  [_SWAY1] = LAYOUT_split_3x5_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      XXXXXXX,KC_COLON, XXXXXXX, KC_MINS, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      XXXXXXX,    LGUI_T(KC_7),    LGUI_T(KC_8),    LGUI_T(KC_9), XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX,KC_COLON,  KC_EQL,  KC_DQT, XXXXXXX,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
+      XXXXXXX,    LGUI_T(KC_4),    LGUI_T(KC_5),    LGUI_T(KC_6), XXXXXXX,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-       KC_GRV, XXXXXXX, KC_PLUS, KC_QUOT, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+       KC_GRV,    LGUI_T(KC_1),    LGUI_T(KC_2),    LGUI_T(KC_3), XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                          XXXXXXX,  XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX
                                       //`--------------------------'  `--------------------------'
