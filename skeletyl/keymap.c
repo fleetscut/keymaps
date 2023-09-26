@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                         KC_J,    KC_L,    LT(_SWAY1,KC_U),    LT(_SWAY2,KC_Y), LT(_SWAY3,KC_QUOT),
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     GUI_A,   ALT_R,   CTL_S,  SHFT_T,    KC_G,                         KC_M,   SFT_N,   CTL_E,   ALT_I,   GUI_O,
+     GUI_A,   ALT_R,   CTL_S,  SHFT_T,    KC_G,                         LT(_NUM,KC_M),   SFT_N,   CTL_E,   ALT_I,   GUI_O,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,                         KC_K,    KC_H, KC_COMM,  KC_DOT, KC_SLSH, 
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -114,11 +114,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_SWAY2] = LAYOUT_split_3x5_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      XXXXXXX,    LGUI(LCTL(KC_7)),    LGUI(LCTL(KC_8)),    LGUI(LCTL(KC_9)), XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      XXXXXXX,    LGUI(LCTL(KC_7)),    LGUI(LCTL(KC_8)),    LGUI(LCTL(KC_9)), LGUI(LALT(LCTL(KC_3))),                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX,    LGUI(LCTL(KC_4)),    LGUI(LCTL(KC_5)),    LGUI(LCTL(KC_6)), XXXXXXX,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
+      XXXXXXX,    LGUI(LCTL(KC_4)),    LGUI(LCTL(KC_5)),    LGUI(LCTL(KC_6)), LGUI(LALT(LCTL(KC_2))),                      XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-       KC_GRV,    LGUI(LCTL(KC_1)),    LGUI(LCTL(KC_2)),    LGUI(LCTL(KC_3)), XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+       KC_GRV,    LGUI(LCTL(KC_1)),    LGUI(LCTL(KC_2)),    LGUI(LCTL(KC_3)), LGUI(LALT(LCTL(KC_1))),                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                          XXXXXXX,  LGUI(LCTL(KC_0)), XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX
                                       //`--------------------------'  `--------------------------'
