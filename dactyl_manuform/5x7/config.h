@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPLIT_USB_TIMEOUT 2000
 
 // For Home Row Mods
-#define TAPPING_TERM 200
+#define TAPPING_TERM 180 
 
 //#define MASTER_RIGHT
 

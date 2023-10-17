@@ -76,10 +76,10 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DHM] = LAYOUT_5x7(
         // left hand
-        _______,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5, SCRATCH1,
-        KC_SCLN,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B, SCRATCH2,
-        KC_MINS,   GUI_A,   ALT_R,   CTL_S,  SHFT_T,    KC_G, SCRATCH3,
-        _______,    KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,
+           M0W0,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5, SCRATCH1,
+           M1W2,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B, SCRATCH2,
+           M1W0,   GUI_A,   ALT_R,   CTL_S,  SHFT_T,    KC_G, SCRATCH3,
+           M2W0,    KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,
         _______, _______, KC_LEFT,KC_RIGHT,
                                 KC_LALT, KC_ESC,
                                 KC_LCTL,  LTNAV, 
